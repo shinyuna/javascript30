@@ -32,7 +32,7 @@ export default [
     music: 'Try everything',
     movie: '주토피아',
     time: '9:00',
-    cover: './image/zootopiz.jpg',
+    cover: './image/zootopia.jpg',
   },
   {
     id: 5,

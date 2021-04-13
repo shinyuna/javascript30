@@ -11,14 +11,15 @@ const musicPlaying = (function () {
 })();
 const styleChnage = (bg, id) => {
   const keys = document.querySelectorAll('.key');
-  const background = document.querySelector('.bg');
+  const background = document.querySelectorAll('.play-cover');
 
   keys.forEach(item => item.classList.remove('playing'));
-  background.style.backgroundImage = `url('${bg}')`;
+  background.forEach(item => (item.style.backgroundImage = `url('${bg}')`));
   keys[id].classList.add('playing');
 };
 
 window.addEventListener('keydown', e => {
+  console.log('🚀 ~ e', e);
   if (e.keyCode === 32) {
     musicPlaying();
     return;

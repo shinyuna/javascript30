@@ -48,6 +48,41 @@ p {
   font-size: 1.55em;
 }
 .playing {
-  border-color: #93c5fd;
-  color: #93c5fd;
+  border-color: #fcd34d;
+  color: #fcd34d;
+}
+
+.player {
+  max-width: 420px;
+  height: 820px;
+  overflow: hidden;
+  background-image: url('https://cdn.dribbble.com/users/130603/screenshots/9319018/media/ec6022470c245aee69fbbb192f055578.gif');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+.player-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: #fff;
+}
+.cover {
+  width: 15em;
+  height: 15em;
+  border-radius: 1em;
+  background-image: url('https://cdn.dribbble.com/users/130603/screenshots/9319018/media/ec6022470c245aee69fbbb192f055578.gif');
+  background-size: cover;
+  background-position: center;
+  margin: 20px auto;
+}
+.player-content .title {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2em;
 }

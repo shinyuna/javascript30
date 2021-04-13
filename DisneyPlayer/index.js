@@ -9,17 +9,20 @@ const musicPlaying = (function () {
     isPlay = !isPlay;
   };
 })();
-const styleChnage = (bg, id) => {
+const styleChnage = music => {
   const keys = document.querySelectorAll('.key');
   const background = document.querySelectorAll('.play-cover');
+  const title = document.querySelector('.play-title');
+  const movie = document.querySelector('.play-movie');
 
   keys.forEach(item => item.classList.remove('playing'));
-  background.forEach(item => (item.style.backgroundImage = `url('${bg}')`));
-  keys[id].classList.add('playing');
+  background.forEach(item => (item.style.backgroundImage = `url('${music.cover}')`));
+  keys[music.id].classList.add('playing');
+  title.innerText = music.title;
+  movie.innerText = music.movie;
 };
 
 window.addEventListener('keydown', e => {
-  console.log('🚀 ~ e', e);
   if (e.keyCode === 32) {
     musicPlaying();
     return;
@@ -32,6 +35,6 @@ window.addEventListener('keydown', e => {
   const time = music.time.split(':').reduce((a, b) => Number(a) * 60 + Number(b));
 
   audio.currentTime = time;
-  styleChnage(music.cover, music.id);
+  styleChnage(music);
   musicPlaying();
 });

@@ -1,0 +1,53 @@
+body,
+html,
+div,
+p {
+  padding: 0;
+  margin: 0;
+}
+.bg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://cdn.dribbble.com/users/130603/screenshots/9319018/media/ec6022470c245aee69fbbb192f055578.gif');
+  background-size: contain;
+  background-position: center;
+}
+.bg-cover {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+}
+.notice {
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 20px 0;
+}
+.key-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 0.5rem;
+  border: 4px solid #fff;
+  color: #fff;
+}
+.key > p {
+  font-size: 1.55em;
+}
+.playing {
+  border-color: #93c5fd;
+  color: #93c5fd;
+}

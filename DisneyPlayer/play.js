@@ -10,7 +10,7 @@ export default [
     id: 1,
     title: "You're Welcome",
     movie: '모아나',
-    time: '0:14',
+    time: '0:11',
     cover: './image/moana.jpg',
   },
   {

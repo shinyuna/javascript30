@@ -10,7 +10,7 @@ p {
   z-index: 1;
   width: 100%;
   height: 100vh;
-  background-image: url('https://cdn.dribbble.com/users/130603/screenshots/9319018/media/ec6022470c245aee69fbbb192f055578.gif');
+  background-image: url('./image/main.jpg');
   background-size: contain;
   background-position: center;
 }
@@ -56,7 +56,7 @@ p {
   max-width: 420px;
   height: 820px;
   overflow: hidden;
-  background-image: url('https://cdn.dribbble.com/users/130603/screenshots/9319018/media/ec6022470c245aee69fbbb192f055578.gif');
+  background-image: url('./image/main.jpg');
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -76,7 +76,7 @@ p {
   width: 15em;
   height: 15em;
   border-radius: 1em;
-  background-image: url('https://cdn.dribbble.com/users/130603/screenshots/9319018/media/ec6022470c245aee69fbbb192f055578.gif');
+  background-image: url('./image/main.jpg');
   background-size: cover;
   background-position: center;
   margin: 20px auto;
